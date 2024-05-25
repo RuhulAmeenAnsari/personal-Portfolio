@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruhul Ameen Dev portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+         /* for whole screen    */   
+        *{                          
+            margin: 0;
+            padding: 0;
+        }
+        /* for the whole body section */
+        body{
+            background-color: rgb(39, 3, 37);
+            color: white;
+            font-family: 'poppins','sans-serif';
+        }
+        /* for nav bar */
+        nav{
+            justify-content: space-around;
+            display: flex;
+            height: 50px;
+            background-color: rgb(63, 17, 61);
+            align-items: center;
+        }
+        /* for unorder list in nav bar */
+        nav ul{
+            justify-content: center;
+            display: flex;
+        }
+        /* for components in unorder list in nav bar */
+        nav ul li{
+            text-decoration: none;
+            list-style: none;
+            color: white;
+           margin: 0  25px;
+        }
+        /* when hover on components of nav bar */
+        nav ul li a:hover{
+            text-decoration: none;
+            color: rgb(214, 127, 223);
+            font-size: 1.1rem;
+        }
+        /* for the whole left div */
+        .left{
+            font-size: 1.5rem;
+            margin:  0 0 0 70px;
+        }
+        /* for the first section */
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+        }
+        /* for div of first section */
+        .firstsection div{
+            width: 30%;
+            
+        }
+        /* for heading in the left section */
+        .leftsection{
+            font-family: poppins;
+            font-size: 2.5rem;
+            margin: 30px 0;    
+        }
+        .leftsection .btns{
+            width:80%;
+        }
+        .leftsection .btns button{
+            color: white;
+            margin: 20px 10px;
+            background-color: #41083e;
+            font-size: 1.5rem;
+            border-color: white;
+            border-radius: 7px;
+            cursor: pointer;
+            width: 8rem;
+            height: 52px;
+        }
+        /* for heading in the left section */
+        .leftsection h1{
+            font-family: 'poppins';
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            
+            
+        }
+
+         /* for highliting the name in the left secction */
+         .namecolour{
+            color:  rgb(205, 99, 200);
+        }
+        .firstsection .text{
+            width: 500px;
+        }
+
+        #element{
+            color: rgb(205, 99, 200);
+            margin-bottom: 5rem;
+        }
+        
+         /* for the image in right section */
+        .rightsection img{
+            margin-top: 20px;
+            margin-right: 40px;
+            height: 80%;
+            width: 110%;
+            display: flex;
+        }
+         /* for whole second section */
+        .secondsection{
+            max-width: 80vw ;
+            margin: auto;    
+        }
+        .secondsection .grey-text{
+           color: rgb(224, 146, 239);
+        }
+        .secondsection h1{
+        
+        font-size: 20px;
+        
+        }
+        /* for under line */
+        main hr{
+            border: 0px;
+            background: rgb(152, 77, 167);
+            height: 1.2px;
+            margin: 40px 80px;    
+        }
+        .secondsection .box{
+           
+            background: white;
+            height: 2px;
+            width: 80vw;
+            display: flex;
+            margin-top: 56px;
+        }
+        .secondsection .vertical{
+            width: 1px;
+            height: 93px;
+            background: white;
+            margin: 0 135px;
+        }
+        .secondsection .vertical .Hs{
+            margin-top:-45px ;
+            margin-left: -25px;
+            align-items: center;
+            width: 40px;
+        }
+        .secondsection .vertical .Hs .des{
+            margin-top: 85px;
+            margin-left: -0px;
+            width: 150px;
+        }
+        .secondsection .vertical .Im{
+            margin-top:-25px ;
+            margin-left: -35px;
+            align-items: center;
+        }
+        .secondsection .vertical .Im .des{
+            margin-top: 90px;
+            margin-left: 10px;
+            width: 150px;
+        }
+        .secondsection .vertical .dca{
+            margin-top:-25px ;
+            margin-left: -15px;
+            align-items: center;
+        }
+        .secondsection .vertical .dca .des{
+            margin-top: 90px;
+            margin-left: -15px;
+            width: 150px;
+        }
+        .secondsection .vertical .btech{
+            margin-top:-25px ;
+            margin-left: -35px;
+            align-items: center;
+        }
+        .secondsection .vertical .btech .des{
+            margin-top: 90px;
+            margin-left: -20px;
+            width: 250px;
+        }
+
+        main .dummy hr{
+            border: 0px;
+            background: rgb(152, 77, 167);
+            height: 1.2px;
+            margin-top: 290px;
+        }
+        .thirdsection .techskills{
+            margin-top: 20px;
+            margin: 0 10px;
+            color: rgb(224, 146, 239);
+        }
+        .thirdsection{
+            justify-content: space-around;
+            display: flex;
+            margin: 10px 130px;
+        }
+        .thirdsection .rightside img{
+            margin-top: 30px;
+            margin-left: 350px;
+            height: 80%;
+            width: 65%;
+            display: flex;
+        }
+        
+        .thirdsection h1{
+            margin: 0px 10px;
+            max-width: 80vw ;
+            font-size: 2rem;
+           
+        }
+        .thirdsection .verticalline{
+            height: 500px;
+            width: 2px;
+            border: 0;
+            background: white;
+            margin-top: 0px;
+            margin-left:10px ;
+        }
+        .thirdsection .verticalline .horizontal{
+            height: 1px;
+            width: 100px;
+            border: 0;
+            background: white;
+            margin-top: 70px ;
+            margin-bottom: 10px;
+            
+        }
+        .thirdsection .verticalline .horizontal .java{
+            margin-left: 20px;
+        }
+        .thirdsection .verticalline .horizontal .c{
+            margin-left: 20px;
+        }
+        .thirdsection .verticalline .horizontal .html{
+            margin-left: 20px;
+        }
+        .thirdsection .verticalline .horizontal .css{
+            margin-left: 20px;
+        }
+        .thirdsection .verticalline .horizontal .js{
+            margin-left: 20px;
+        }
+        .thirdsection .verticalline .horizontal .node{
+            margin-left: 20px;
+        }
+        .thirdsection .verticalline .horizontal .mysql{
+            margin-left: 20px;
+        }
+
+        .fourthsection{
+            max-width: 80vw ;
+            margin: auto;
+            height: 400px;
+        }
+
+        main .fourthsection hr{
+            border: 0px;
+            background: rgb(152, 77, 167);
+            height: 1.2px;
+            margin: 40px -30px; 
+        }
+
+        .fourthsection h1{
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .fourthsection .minor{
+            font-size: 1rem;
+            color: rgb(224, 146, 239);
+        }
+        .fourthsection .attendance{
+            margin-top: 20px ;
+            color: rgb(224, 146, 239);
+        }
+        .fourthsection .tools{
+            margin-top: 20px 0;
+            color: rgb(224, 146, 239);
+        }
+        .fourthsection ul {
+            margin: 20px;
+        }
+        .fourthsection .portfolio{
+
+            margin: 30px 0;
+            color: rgb(224, 146, 239);
+        }
+        .fourthsection .tools2{
+            margin-top: 20px;
+            color: rgb(224, 146, 239);
+        }
+        footer{
+            margin-top: 170px;
+            background-color: #372136;
+            height: 40px;
+            width: auto;
+        }
+        footer .greet{
+            
+            color: #965593;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <div class = "left">Ruhul's portfolio</div>
+        <div class="right"></div>
+        <ul>
+           <li><a href="/">Home</a></li>
+           <li><a href="/">About</a></li>
+           <li><a href="/">services</a></li>
+           <li><a href="/">projects</a></li>
+           <li><a href="/">contact Me</a></li>
+        </ul>
+    </nav>
+   </header> 
+
+   <main>
+
+    <section class="firstsection">
+        <div class="leftsection">
+          <h1>  Welcome to my portfolio</h1>
+          My Name is
+           <span class = "namecolour">Ruhul</span>
+           <div class = "text">and I am an</div>
+            <span id="element"></span>
+          <div class ="btns">
+             <button class ="btn", onclick="document.location='https://www.linkedin.com/feed/'">Linked In</button>
+            <button class ="btn", onclick="document.location='https://github.com/dashboard'">Git Hub</button>
+        </div> 
+        </div>
+        
+        <div class="rightsection">
+            <img src="kindpng_6093722.png" alt="">
+        </div>
+    </section>
+
+<hr>
+    <section class="secondsection">
+        <span class = "grey-text">Academics</span>
+        <h1>Qualification</h1>
+        <div class="box">
+        <div class="vertical">
+            <div class="Hs">High School
+            <div class="des">Bright Career School (2018)</div></div>
+        </div>
+        <div class="vertical">
+            <div class="Im">Intermediate
+            <div class="des">Bright Career School (2020)</div></div>
+        </div>
+        <div class="vertical">
+            <div class="dca">DCA
+            <div class="des">N.S. Institute (2021)</div></div>
+        </div>
+        <div class="vertical">
+            <div class="btech">B.Tech(Persuing)
+            <div class="des">Maharishi University Of Information Technology (2025)</div></div>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="dummy">
+    <hr>
+    </section>
+
+
+    <section class="thirdsection">
+        
+        <div class="leftside">
+        <span class = "techskills">Technical</span>
+        <h1>Skills</h1>
+        <div class="verticalline">
+            <div class="horizontal">
+                <div class="java">Java</div>
+            </div>
+            <div class="horizontal">
+                <div class="c">Basic C</div>
+            </div>
+            <div class="horizontal">
+                <div class="html">HTML</div>
+            </div>
+            <div class="horizontal">
+                <div class="css">CSS</div>
+            </div>
+            <div class="horizontal">
+                <div class="js">JavaScript</div>
+            </div>
+            <div class="horizontal">
+                <div class="node">NODE JS</div>
+            </div>
+            <div class="horizontal">
+                <div class="mysql">MY SQL</div>
+            </div>
+        </div>
+    </div>
+    <div class="rightside">
+        <img src="—Pngtree—flat design concept of programmers_5870919.png" alt="">
+    </div>
+    </section>
+
+    <section class="fourthsection">
+        <hr>
+        <span class="minor">Academic</span>
+        <h1>Projects</h1>
+
+        <span class="attendance">-> Online Attendance System With Face Recognition</span>
+        : Developing an online attendance system that leverages face recognition technology to streamline attendance tracking (Project is currently in progress).
+        <div class = "tools">Tools used:</div>
+        <ul>
+            <li>Java</li>
+            <li>My SQL</li>
+        </ul>
+
+        <span class="portfolio">-> Personal Portfolio Website</span>
+        : Developed a personal portfolio website to showcase my skills, projects, and professional background. The website is designed to provide a comprehensive overview of my capabilities as a Full Stack Developer and to serve as an online resume for potential employers and clients.
+        <div class = "tools2">Tools used:</div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+    </section>  
+
+   </main>
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script>
+    var typed = new Typed('#element', {
+      strings: ['Upcoming Engineeer'],
+      typeSpeed: 50,
+    });
+  </script>
+    
+  <footer class ="Footer"> 
+    <div class="greet">THANK YOU FOR VISITING</div>
+</footer>
+
+
+</body>
+</html>
